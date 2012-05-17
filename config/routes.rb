@@ -1,4 +1,5 @@
 Sendartfiles::Application.routes.draw do
+  resources :uploads
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -12,7 +13,6 @@ Sendartfiles::Application.routes.draw do
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
-resources :uploads
   # Sample resource route with options:
   #   resources :products do
   #     member do
