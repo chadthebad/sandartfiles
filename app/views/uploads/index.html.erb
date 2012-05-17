@@ -1,0 +1,10 @@
+<h2>Hello, there are <%= @count %> files for you, sir.</h2>
+<table>
+	<% @uploads.each do |u| %>
+		<tr>
+			<td><%= u.email %></td> 
+			<td><%= u.description %></td> 
+			<td> <%= distance_of_time_in_words_to_now u.created_at %> ago</td>
+		</tr> 
+	<% end %>
+</table>
