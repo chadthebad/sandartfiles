@@ -6,7 +6,7 @@ class UploadsController < ApplicationController
   end
 
   def create
-    render :text => "Hello Lily"
+    render :text => "Hello #{params.inspect}"
   end
   
 end
